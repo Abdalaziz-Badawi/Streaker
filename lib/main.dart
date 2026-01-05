@@ -1,9 +1,18 @@
 import 'package:flutter/material.dart';
-// pages
-import 'package:project_streaker/pages/myhomepage.dart';
 // providers
 import 'package:provider/provider.dart';
 import 'package:provider/single_child_widget.dart';
+
+// pages
+import 'package:project_streaker/pages/myhomepage.dart';
+import 'package:project_streaker/pages/newstreak.dart';
+import 'package:project_streaker/pages/mystreakspage.dart';
+import 'package:project_streaker/pages/myaccount.dart';
+
+// Widgets
+// import 'package:project_streaker/widgets/bottomnav.dart';
+// import 'package:project_streaker/widgets/streakcard.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -20,6 +29,7 @@ class MyApp extends StatelessWidget {
     ];
 
     final Widget app = MaterialApp(
+      debugShowCheckedModeBanner: false,
         title: 'Streaker Demo',
       // theme: ThemeData(
       //   colorScheme: ColorScheme.fromSeed(seedColor: Colors.amber),
@@ -30,7 +40,10 @@ class MyApp extends StatelessWidget {
       
       home: const MyHomePage(),
       routes: {
-        '/home': (context) => const MyHomePage(),
+        '/home': (context) =>  MyHomePage(),
+        '/myaccount': (context) =>  Myaccount(),
+        '/create_streak': (context) =>  Newstreak(),
+        '/mystreaks': (context) =>  MyStreaks(),
       },
       initialRoute: '/home',
     );
