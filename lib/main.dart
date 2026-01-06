@@ -8,6 +8,7 @@ import 'package:project_streaker/pages/myhomepage.dart';
 import 'package:project_streaker/pages/newstreak.dart';
 import 'package:project_streaker/pages/mystreakspage.dart';
 import 'package:project_streaker/pages/myaccount.dart';
+import 'package:project_streaker/pages/starterpage.dart';
 
 // Widgets
 // import 'package:project_streaker/widgets/bottomnav.dart';
@@ -44,6 +45,7 @@ class MyApp extends StatelessWidget {
         '/myaccount': (context) =>  Myaccount(),
         '/create_streak': (context) =>  Newstreak(),
         '/mystreaks': (context) =>  MyStreaks(),
+        '/starterpage': (context) =>  Starterpage(),
       },
       initialRoute: '/home',
     );

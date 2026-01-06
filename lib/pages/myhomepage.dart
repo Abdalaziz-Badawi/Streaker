@@ -36,6 +36,12 @@ class MyHomePage extends StatelessWidget {
               },
               child: const Text('My Account'),
             ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/starterpage');
+              },
+              child: const Text('Starter Page'),
+            ),
           ],
         ),
       ),
