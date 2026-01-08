@@ -50,7 +50,11 @@ class MyHomePage extends StatelessWidget {
         onPressed: () {
           // Navigator.pushNamed(context, '/create_streak');
           showModalBottomSheet(
+            elevation: 5,
+            requestFocus: true,
+            useSafeArea: true,
             context: context,
+            isScrollControlled: true,
             builder: (BuildContext context) {
               return const Newstreak();
             },

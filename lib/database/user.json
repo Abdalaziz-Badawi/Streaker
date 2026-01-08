@@ -1,0 +1,35 @@
+{
+    "username": "user234242",
+    "email": "testeruser@domain.com",
+    "password": "value4pass",
+    "created_at": "2026-01-01T12:00:00Z",
+    "userType": "admin",
+    "isActive": "true",
+    "lastLogin": "2024-06-10T08:30:00Z",
+    "preferences": {
+        "theme": "dark",
+        "notifications": "enabled",
+        "language": "en-US",
+        "timezone": "GMT-5",
+        "privacy": {
+            "onlineStatus": "visible",
+            "profileVisibility": "friends",
+            "dataSharing": "limited"
+        }
+    },
+    "roles": [
+        "Tester",
+        "contributor"
+    ],
+    "profile": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "DateOfBirth": "1990-01-11",
+        "address": {
+            "street": "123 Main St",
+            "city": "Anytown",
+            "state": "OMDR",
+            "zip": "2490101"
+        }
+    }
+}

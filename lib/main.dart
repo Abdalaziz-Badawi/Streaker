@@ -38,7 +38,10 @@ class MyApp extends StatelessWidget {
       // darkTheme: ThemeData.dark(
       //   useMaterial3: true,
       // ),
-      
+      themeMode: ThemeMode.system,
+      theme: ThemeData(
+        brightness: Brightness.dark,
+      ),
       home: const MyHomePage(),
       routes: {
         '/home': (context) =>  MyHomePage(),
