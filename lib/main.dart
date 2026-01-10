@@ -38,10 +38,19 @@ class MyApp extends StatelessWidget {
       // darkTheme: ThemeData.dark(
       //   useMaterial3: true,
       // ),
-      themeMode: ThemeMode.system,
+      // themeMode: ThemeMode.system,
       theme: ThemeData(
-        brightness: Brightness.dark,
+        useMaterial3: true,
+        appBarTheme: AppBarTheme(
+          backgroundColor: Colors.transparent,
+        ),
+        // buttonTheme: const ButtonThemeData(
+        //   buttonColor: Color(0xFFB70000),
+        // ),
+        // scaffoldBackgroundColor: Colors.white,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
+
       home: const MyHomePage(),
       routes: {
         '/home': (context) =>  MyHomePage(),
