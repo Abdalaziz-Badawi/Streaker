@@ -6,64 +6,23 @@ class Starterpage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: null,
+      appBar: AppBar(title: Text("Starter")),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const Text('Welcome to streaker! Please log in to continue.'),
-          SafeArea(child: SizedBox(height: 5)),
-          TextFormField(
+          // SafeArea(child: ),
+          TextField(
             decoration: InputDecoration(
-              labelText: 'Email Address',
-              border: OutlineInputBorder(),
-              filled: true,
-              
-              // radius: BorderRadius.circular(8.0),
-              alignLabelWithHint: true,
-              hint: const Text('Enter your email'),
-              enabledBorder: OutlineInputBorder(
-                borderSide: const BorderSide(color: Colors.blue),
-                borderRadius: BorderRadius.circular(8.0),
-              ),
-              contentPadding: EdgeInsets.all(16.0),
+              border: UnderlineInputBorder(),labelText: 'Enter Username', ),
+              // onChanged: (value) => Function 
             ),
-          ),
-          SafeArea(child: SizedBox(height: 20)),
-          TextFormField(
-            decoration: InputDecoration(
-              labelText: 'Password',
-              border: OutlineInputBorder(),
-              // radius: BorderRadius.circular(8.0),
-              alignLabelWithHint: true,
-              hint: const Text('Enter your password'),
-              enabledBorder: OutlineInputBorder(
-                borderSide: const BorderSide(color: Colors.blue),
-                borderRadius: BorderRadius.circular(8.0),
-              ),
-              contentPadding: EdgeInsets.all(16.0),
-            ),
-          ),
-          SafeArea(child: SizedBox(height: 30)),
-          ElevatedButton(
-            onPressed: () {
-              // Do something
-            },
-            style: ElevatedButton.styleFrom(
-              padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 15),
-              // backgroundColor: Color(0xFFB70000),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(8.0),
-              ),
-            ),
-            child: const Text('Log In'),
-          ),
-          TextButton(
-            onPressed: () {
-              // Navigator.pop(context);
-            },
-            child: const Text('New? Create an account!'),
-          ),
         ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.pushNamed(context, '/help');
+        },
+        child: const Icon(Icons.question_mark),
       ),
     );
   }
