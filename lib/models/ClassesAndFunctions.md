@@ -1,3 +1,5 @@
+# Model file
+
 This folder will host all **classes** and **function** files that I'll be using throughout the project.
 
 i believe we saw something similar in **SOLID File structure - Clean Architecture** file management system.

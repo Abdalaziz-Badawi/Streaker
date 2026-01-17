@@ -1,8 +1,9 @@
 // ignore_for_file: avoid_unnecessary_containers
 
 import 'package:flutter/material.dart';
+import 'package:project_streaker/widgets/bottomnav.dart';
 // import 'package:project_streaker/widgets/bottomnav.dart';
-import 'package:project_streaker/pages/newstreak.dart';
+// import 'package:project_streaker/pages/newstreak.dart';
 import 'package:project_streaker/widgets/topbar.dart';
 
 class MyHomePage extends StatelessWidget {
@@ -64,26 +65,30 @@ class MyHomePage extends StatelessWidget {
                 ],
               ),
             ),
+            Container(
+              color: Colors.blue,
+              height: 100,
+              width: double.infinity,
+              alignment: Alignment(0, 0),
+              child: Text("Ad Banner"),
+            ),
+
           ],
+
+          
+
         ),
+
+
       ),
       floatingActionButton: FloatingActionButton.extended(
         icon: Icon(Icons.add),
         label: Text("New Streak"),
         onPressed: () {
-          // Navigator.pushNamed(context, '/create_streak');
-          showModalBottomSheet(
-            elevation: 5,
-            requestFocus: true,
-            useSafeArea: true,
-            context: context,
-            isScrollControlled: true,
-            builder: (BuildContext context) {
-              return const Newstreak();
-            },
-          );
+          Navigator.pushNamed(context, '/create_streak');
         },
       ),
+      bottomNavigationBar: MyBottomNavBar(),
     );
   }
 }
