@@ -10,27 +10,53 @@ class Newstreak extends StatelessWidget {
 
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: const [
-            Text('New Streak Page'),
-            SizedBox(height: 20),
-            Text('Create a New Streak!'),
-
-            TextField(
-              decoration: InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: 'Streak Name',
-              ),
+          children: [
+            Container(
+              color: Colors.amber,
+              height: 100,
+              width: double.infinity,
+              child:Text("data"),
             ),
-            SizedBox(height: 20),
-
-            ElevatedButton(
-              onPressed: null, // Add your onPressed code here!
-              child: Text('Create Streak'),
+            // TODO: Check why this isnt working/rendring
+            Row(
+              children:[
+                Container(
+                  height: 50,
+                  color: Colors.white,
+                ),
+                Container(
+                  height: 50,
+                  color: Colors.grey,
+                ),
+                Container(
+                  height: 50,
+                  color: Colors.red,
+                ),
+              ],
             ),
+            Container(),
+            Container(),
+            Container(), 
           ],
         ),
       ),
     );
   }
 }
+            // Container(
+            //   color: Colors.amber,
+            //   height: 100,
+            //   width: double.infinity,
+            //   child: Row(
+            //     children: [
+            //       Container(
+            //         color: Colors.green,
+            //         height: 50,
+            //       ),
+            //       Container(
+            //         color: Colors.red,
+            //         height: 50
+            //       ),
+            //     ],
+            //   ),
+            // ),

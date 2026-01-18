@@ -73,6 +73,14 @@ class MyHomePage extends StatelessWidget {
               child: Text("Ad Banner"),
             ),
 
+            Container(
+              color: Colors.blue,
+              height: 100,
+              width: double.infinity,
+              alignment: Alignment(0, 0),
+              child: Text("Ad Banner"),
+            ),
+
           ],
 
           
