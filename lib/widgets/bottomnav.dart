@@ -107,3 +107,35 @@ class MyBottomNavBar extends StatelessWidget {
       );
   }
 }
+
+
+// class MyBottomNavBar extends StatelessWidget {
+//   const MyBottomNavBar({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return TabBar(
+//       isScrollable: false,
+//       padding: EdgeInsets.all(12),
+//       tabs: [
+//         Tab(
+//           child: IconButton(
+//              iconSize: 72,
+//              icon: const Icon(Icons.home_filled),
+//              onPressed: () {},
+//              ),
+//         ),
+//         Tab(
+//           child: IconButton(
+//              iconSize: 72,
+//              icon: const Icon(Icons.list),
+//              onPressed: () {},
+//              ),
+//         ),
+//         // Tab(),
+//       ],
+//     );
+
+
+//   } // widget build
+// } //class

@@ -10,7 +10,7 @@ class Newstreak extends StatelessWidget {
 
       body: Center(
         child: Column(
-          children: [
+          children: <Widget>[
             Container(
               color: Colors.amber,
               height: 100,

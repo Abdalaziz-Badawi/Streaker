@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:project_streaker/widgets/bottomnav.dart';
 // import 'package:project_streaker/widgets/bottomnav.dart';
 // import 'package:project_streaker/pages/newstreak.dart';
-import 'package:project_streaker/widgets/topbar.dart';
+import 'package:project_streaker/widgets/myappbar.dart';
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
