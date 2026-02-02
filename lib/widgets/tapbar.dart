@@ -6,8 +6,8 @@ class MyTapBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Column(
-      height : 35,
-      Color : colors.transparent,
+      // height : 35,
+      // Color : colors.transparent,
 
       children: [
         Row(
